@@ -1,4 +1,7 @@
 /* pages/personal/personal.wxss */
+.portrait-box{
+  padding: 10px;
+}
 .portrait-img image{
   width: 120rpx;
   height: 120rpx;
