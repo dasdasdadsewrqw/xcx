@@ -1,4 +1,7 @@
 <!--index.personal-->
 <view class="container">
+  <view>
+    <view class="portrait-img"><image src="{{ portrait }}"></image></view>
+  </view>
   
 </view>

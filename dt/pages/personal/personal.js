@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    portrait:'http://img1.imgtn.bdimg.com/it/u=3995885402,1113893169&fm=26&gp=0.jpg',
   },
 
   /**
@@ -23,7 +23,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
