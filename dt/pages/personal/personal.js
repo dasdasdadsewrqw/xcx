@@ -8,6 +8,13 @@ Page({
    */
   data: {
     portrait:'http://img1.imgtn.bdimg.com/it/u=3995885402,1113893169&fm=26&gp=0.jpg',
+    name: '刘德华',
+    vip: '青铜选手',
+    integral: '2000',
+    ddNumber: '2000',
+    ddName: '订单数量',
+    xdMoney: '60000',
+    xdtitle: '下单金额',
   },
 
   /**

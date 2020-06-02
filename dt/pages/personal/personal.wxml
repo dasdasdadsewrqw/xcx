@@ -1,7 +1,26 @@
 <!--index.personal-->
 <view class="container">
-  <view class="portrait-box">
+
+  <view class="portrait-box wx-flex">
     <view class="portrait-img"><image src="{{ portrait }}"></image></view>
+    <view class="flex-one portrait-right">
+      <text class="portrait-name">{{ name }}</text>
+      <view class="personal-rtvp">
+        <text class="personal-vip">{{ vip }} </text>
+        <text class="personal-integral">积分:{{ integral }} </text>
+      </view>
+    </view>
+  </view>
+
+  <view class="wx-flex">
+    <view class="flex-one">
+      <text> {{ ddNumber }} </text>
+      <text>{{ ddName }} </text>
+    </view>
+    <view class="flex-one">
+      <text></text>
+      <text></text>
+    </view>
   </view>
   
 </view>
