@@ -14,7 +14,7 @@ Page({
     ddNumber: '2000',
     ddName: '订单数量',
     xdMoney: '60000',
-    xdtitle: '下单金额',
+    xdTitle: '下单金额',
   },
 
   /**

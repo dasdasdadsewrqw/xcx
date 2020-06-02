@@ -12,15 +12,17 @@
     </view>
   </view>
 
-  <view class="wx-flex">
-    <view class="flex-one">
-      <text> {{ ddNumber }} </text>
+  <view class="wx-flex personal-moneybox" >
+    <view class="flex-one personal-order">
+      <text class="personal-onumber"> {{ ddNumber }} </text>
       <text>{{ ddName }} </text>
     </view>
     <view class="flex-one">
-      <text></text>
-      <text></text>
+      <text class="personal-onumber"> {{ xdMoney }} </text>
+      <text>{{ xdTitle }} </text>
     </view>
   </view>
+
+  <view class="personal-emptycolr"></view>
   
 </view>

@@ -40,16 +40,36 @@
   padding-left: 10px;
 }
 .portrait-name{
+  display: block;
   font-size: 36rpx;
   font-weight: bold;
-  display: block;
   line-height: 50rpx;
 }
 .personal-rtvp{
-  font-size: 25rpx;
   margin-top: 30rpx;
+  font-size: 25rpx;
   line-height: 50rpx;
 }
 .personal-vip{
   margin-right: 20px;
+}
+.personal-moneybox{
+  text-align: center;
+  margin: 20rpx 0;
+}
+.personal-moneybox text{
+  display: block;
+  line-height: 40rpx;
+  font-size: 25rpx;
+}
+.personal-order{
+  border-right: 1px solid #000;
+}
+.personal-moneybox .personal-onumber{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.personal-emptycolr{
+  height: 20rpx;
+  background-color: rgb(226, 226, 226);
 }
