@@ -1,28 +1,38 @@
 <!--index.personal-->
 <view class="container">
 
-  <view class="portrait-box wx-flex">
-    <view class="portrait-img"><image src="{{ portrait }}"></image></view>
-    <view class="flex-one portrait-right">
-      <text class="portrait-name">{{ name }}</text>
-      <view class="personal-rtvp">
-        <text class="personal-vip">{{ vip }} </text>
-        <text class="personal-integral">积分:{{ integral }} </text>
-      </view>
-    </view>
-  </view>
+	<view class="portrait-box wx-flex">
+		<view class="portrait-img">
+			<image src="{{ userList.avatarUrl }}"></image>
+		</view>
+		<view class="flex-one portrait-right" wx:if="{{ loginStatus }}">
+			<text class="portrait-name">{{ userList.nickName }}</text>
+			<view class="personal-rtvp">
+				<text class="personal-vip">{{ vip }} </text>
+				<text class="personal-integral">积分:{{ integral }} </text>
+			</view>
+		</view>
 
-  <view class="wx-flex personal-moneybox" >
-    <view class="flex-one personal-order">
-      <text class="personal-onumber"> {{ ddNumber }} </text>
-      <text>{{ ddName }} </text>
-    </view>
-    <view class="flex-one">
-      <text class="personal-onumber"> {{ xdMoney }} </text>
-      <text>{{ xdTitle }} </text>
-    </view>
-  </view>
+		<view class="flex-one portrait-right" wx:else>
+			<button class="portrait-btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+			<view class="personal-rtvp">
+				<text class="personal-yhq">注册即送优惠券 </text>
+			</view>
+		</view>
 
-  <view class="personal-emptycolr"></view>
-  
+	</view>
+
+	<view class="wx-flex personal-moneybox" wx-if="{{ loginStatus }}">
+		<view class="flex-one personal-order">
+			<text class="personal-onumber"> {{ ddNumber }} </text>
+			<text>{{ ddName }} </text>
+		</view>
+		<view class="flex-one">
+			<text class="personal-onumber"> {{ xdMoney }} </text>
+			<text>{{ xdTitle }} </text>
+		</view>
+	</view>
+
+	<view class="personal-emptycolr"></view>
+
 </view>
