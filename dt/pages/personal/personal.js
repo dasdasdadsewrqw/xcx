@@ -47,21 +47,27 @@ Component({
       let iconList = [{
         iconImg: '/static/dzb.png',
         name: '地址簿',
+        url: '/pages/siteBook/siteBook'
       }, {
         iconImg: '/static/yhq.png',
         name: '优惠券',
+        url: ''
       }, {
         iconImg: '/static/yqfx.png',
         name: '邀请分享',
+        url: ''
       }, {
         iconImg: '/static/gywm.png',
         name: '关于我们',
+        url: ''
       }, {
         iconImg: '/static/tsybz.png',
         name: '投诉与保障',
+        url: ''
       }, {
         iconImg: '/static/lxkf.png',
         name: '联系客服',
+        url: ''
       }];
       this.setData({
         icbox: this.group(iconList, 4)
@@ -102,11 +108,26 @@ Component({
         }
       })
     },
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
+    
+    goLink(el) {
+      let toUrl = el.currentTarget.dataset.cap;
+      if (this.data.loginStatus) {         //用户是否已经授权登录
+        wx.navigateTo({
+          url: toUrl,
+        })
+      } else {
+        wx.showModal({
+          title: '温馨提示',
+          content: '您还未登录，请先登录后操作！',
+          success (res) {
+            if (res.confirm) {
+              console.log('用户点击确定')
+            } else if (res.cancel) {
+              console.log('用户点击取消')
+            }
+          }
+        })
+      }
     }
 
   }
