@@ -3,90 +3,134 @@
   display: flex;
   flex-direction: row;
 }
-.flex-one{
+
+.flex-one {
   -webkit-flex: 1;
   -webkit-box-flex: 1;
   flex: 1;
 }
-.flex-two{
+
+.flex-two {
   -webkit-flex: 2;
   -webkit-box-flex: 2;
   flex: 2;
 }
-.flex-three{
+
+.flex-three {
   -webkit-flex: 3;
   -webkit-box-flex: 3;
   flex: 3;
 }
-.flex-four{
+
+.flex-four {
   -webkit-flex: 4;
   -webkit-box-flex: 4;
   flex: 4;
 }
-.flex-five{
+
+.flex-five {
   -webkit-flex: 5;
   -webkit-box-flex: 5;
   flex: 5;
 }
-.portrait-box{
+
+.portrait-box {
   padding: 10px;
 }
-.portrait-img image{
+
+.portrait-img image {
   width: 120rpx;
   height: 120rpx;
   border-radius: 100%;
 }
-.portrait-right{
+
+.portrait-right {
   padding-left: 10px;
 }
-.portrait-name{
+
+.portrait-name {
   display: block;
   font-size: 36rpx;
   font-weight: bold;
   line-height: 50rpx;
 }
-.portrait-btn{
+
+.portrait-btn {
   display: inline-block;
-  width: 100rpx;
   padding: 0;
   line-height: 50rpx;
+  text-align: left;
   font-size: 36rpx;
   font-weight: bold;
   background: none;
   border: none;
 }
-.personal-rtvp{
+
+.personal-rtvp {
   margin-top: 30rpx;
   font-size: 25rpx;
   line-height: 50rpx;
 }
-.personal-vip{
+
+.personal-vip {
   margin-right: 20px;
 }
-.personal-yhq{
+
+.personal-yhq {
   display: inline-block;
   padding: 0 20rpx;
   color: #fff;
   background-color: rgb(167, 167, 167);
   border-radius: 20rpx;
 }
-.personal-moneybox{
+
+.personal-moneybox {
   text-align: center;
   margin: 20rpx 0;
 }
-.personal-moneybox text{
+
+.personal-moneybox text {
   display: block;
   line-height: 40rpx;
   font-size: 25rpx;
 }
-.personal-order{
+
+.personal-order {
   border-right: 1px solid #000;
 }
-.personal-moneybox .personal-onumber{
+
+.personal-moneybox .personal-onumber {
   font-size: 32rpx;
   font-weight: bold;
 }
-.personal-emptycolr{
+
+.personal-emptycolr {
   height: 20rpx;
   background-color: rgb(226, 226, 226);
+}
+
+.personal-icbox {
+  text-align: center;
+  overflow: hidden;
+  padding: 20rpx 0;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.personal-icbox:last-child {
+  border: none;
+}
+
+.icbox-list {
+  float: left;
+  width: 187.5rpx;
+}
+
+.personal-icbox image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.personal-icbox text {
+  display: block;
+  font-size: 28rpx;
 }

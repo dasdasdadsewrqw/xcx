@@ -35,4 +35,11 @@
 
 	<view class="personal-emptycolr"></view>
 
+	<view class="personal-icbox" wx:for="{{ icbox }}" wx:key="index">
+		<view class="icbox-list" wx:for="{{ item }}" wx:key="index">
+			<image src="{{ item.iconImg }}"></image>
+			<text>{{ item.name }} </text>
+		</view>
+	</view>
+
 </view>
