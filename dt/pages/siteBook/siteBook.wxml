@@ -1,4 +1,18 @@
 <view class="container">
-    
+	<radio-group bindchange="radioChange">
+		<view class="sitebook-list" wx:for="{{ siteList }}" wx:key="index">
+			<view class="sitebook-listop">
+				<view class="sitebook-name">{{ item.name }}  {{ item.tel }}</view>
+				<view class="sitebook-company">{{ item.company }}</view>
+				<view class="sitebook-site">{{ item.site }}</view>
+			</view>
+			<view class="sitebook-listbm">
+				<label class="radio"><radio value="{{ index }}" />设为默认寄件地址 </label>
+                <view class="sitebook-oper">
+                    <view class="sitebook-redact">编辑</view>
+                    <view class="sitebook-delete">删除</view>
+                </view>
+			</view>
+		</view>
+	</radio-group>
 </view>
-
