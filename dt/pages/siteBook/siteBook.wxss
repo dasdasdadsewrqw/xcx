@@ -1,6 +1,9 @@
 page {
     background: #f2f2f2;
 }
+.container{
+    padding-bottom: 150rpx;
+}
 .sitebook-list{
     margin: 20rpx;
     padding: 0 20rpx;
@@ -27,4 +30,21 @@ page {
 }
 .sitebook-redact{
     margin-right: 50rpx;
+}
+.sitebook-addbtn{
+    width: 750rpx;
+    height: 120rpx;
+    position: fixed;
+    bottom: 0;
+    padding-top: 30rpx;
+    background-color: #f2f2f2;
+}
+.sitebook-addbtn button:not([size='mini']){
+    width: 600rpx;
+    height: 80rpx;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 500;
+    background-color: #cc0033;
+    border-radius: 80rpx;
 }

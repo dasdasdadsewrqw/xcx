@@ -28,6 +28,18 @@ Component({
                     company: '积木创意有限公司',
                     site: '重庆市九龙坡区'
                 }
+                ,{
+                    name: '阿祖',
+                    tel: '15018505691',
+                    company: '积木创意有限公司',
+                    site: '重庆市九龙坡区'
+                }
+                ,{
+                    name: '阿祖',
+                    tel: '15018505691',
+                    company: '积木创意有限公司',
+                    site: '重庆市九龙坡区'
+                }
             ]
             this.setData({
                 siteList: bookList
@@ -43,6 +55,11 @@ Component({
 
             this.setData({
                 siteList: items
+            })
+        },
+        addSite() {
+            wx.navigateTo({
+                url: '/pages/addSite/addSite',
             })
         }
 
