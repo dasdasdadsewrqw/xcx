@@ -36,7 +36,7 @@
 	<view class="personal-emptycolr"></view>
 
 	<view class="personal-icbox" wx:for="{{ icbox }}" wx:key="index">
-		<view class="icbox-list" wx:for="{{ item }}" wx:key="index" bindtap="goLink" data-cap="{{ item.url }}">
+		<view class="icbox-list" wx:for="{{ item }}" wx:key="index" bindtap="goLink" data-list="{{ item }}">
 			<image src="{{ item.iconImg }}"></image>
 			<text>{{ item.name }} </text>
 		</view>
