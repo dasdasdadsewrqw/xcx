@@ -1,3 +1,73 @@
-page {
-    background: #f2f2f2;
+.addsite-box{
+    padding: 30rpx;
+}
+.addsite-title{
+    font-size: 32rpx;
+    font-weight: 700;
+}
+.addsite-list{
+    border-bottom: 1px solid #ccc;
+    font-size: 28rpx;
+}
+.addsite-list input{
+    height: 92rpx;
+    line-height: 92rpx;
+}
+.addsite-addTag,.addsite-remTag{
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 50rpx;
+    text-align: center;
+    border: 2px solid rgb(138, 138, 138);
+    color: rgb(138, 138, 138);
+    margin: 23rpx;
+}
+.addsite-tagbox{
+    padding: 20rpx 0;
+    font-size: 25rpx;
+}
+.addsite-tag{
+    display: inline-block;
+    height: 45rpx;
+    line-height: 45rpx;
+    color: #fff;
+    padding: 0 20rpx;
+    margin-right: 20rpx;
+    margin-bottom: 10rpx;
+    background-color: rgb(180, 180, 180);
+    border-radius: 45rpx;
+}
+.addsite-tag.active{
+    background-color: rgb(79, 192, 113);
+}
+.addsite-remTag{
+    margin: 0 23rpx;
+}
+.addsite-ckbox{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 25rpx;
+    color: #999;
+}
+.addsite-ckbox .wx-checkbox-input{
+    width: 32rpx;
+    height: 32rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.addsite-btn{
+    margin-top: 60rpx;
+}
+.addsite-btn button:not([size='mini']){
+    width: 600rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 500;
+    padding: 0;
+    background-color: #cc0033;
+    border-radius: 80rpx;
 }

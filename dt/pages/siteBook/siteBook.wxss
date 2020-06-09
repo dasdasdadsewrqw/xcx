@@ -42,9 +42,11 @@ page {
 .sitebook-addbtn button:not([size='mini']){
     width: 600rpx;
     height: 80rpx;
+    line-height: 80rpx;
     color: #fff;
     font-size: 32rpx;
     font-weight: 500;
+    padding: 0;
     background-color: #cc0033;
     border-radius: 80rpx;
 }

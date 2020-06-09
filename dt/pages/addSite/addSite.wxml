@@ -1,3 +1,47 @@
 <view class="container">
-	新增地址
+	<view class="addsite-box">
+		<view class="addsite-title">联系人信息</view>
+		<view class="addsite-iptbox">
+			<form catchsubmit="formSubmit">
+				<view class="addsite-list">
+					<input name="usname" placeholder="姓名" />
+				</view>
+				<view class="addsite-list">
+					<input name="tel" placeholder="电话" />
+				</view>
+				<view class="addsite-list">
+					<input name="tel2" placeholder="分机号" />
+				</view>
+				<view class="addsite-list">
+					<picker bindchange="changeRegin" mode = "region" value="{{region}}">
+						<input name="region" value="{{ region }}" placeholder="城市/区域" />
+					</picker>
+				</view>
+				<view class="addsite-list">
+					<input name="detailed" bindtap="getLocation" value="{{ detailed }}" placeholder="详细地址(例如:xxx街道xxx号)" />
+				</view>
+				<view class="addsite-list wx-flex">
+					<input class="flex-one" value="{{ tag }}" placeholder="添加标签" bindinput="tagInput"/>
+					<view class="addsite-addTag" bindtap="addTag">+</view>
+				</view>
+				<view class="addsite-tagbox wx-flex">
+					<view class="flex-one">
+						<view class="addsite-tag {{ tagActive == index ? 'active' : '' }}" bindtap="tagClick" wx:for="{{ tagList }}" wx:key="index" data-idx="{{ index }}">{{ item }} </view>	
+					</view>
+					<view class="addsite-remTag" bindtap="removeTag">-</view>
+				</view>
+				<view class="addsite-ckbox">
+					<checkbox-group name="mr">
+						<checkbox value="true" />
+						<text>设为默认邮寄地址</text>
+					</checkbox-group>
+				</view>
+
+				<view class="addsite-btn">
+					<button type="primary" formType="submit">确定</button>
+				</view>
+			</form>
+		</view>
+
+	</view>
 </view>

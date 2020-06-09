@@ -1,2 +1,39 @@
 /**app.wxss**/
+page {
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+}
 
+.wx-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-one {
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.flex-two {
+    -webkit-flex: 2;
+    -webkit-box-flex: 2;
+    flex: 2;
+}
+
+.flex-three {
+    -webkit-flex: 3;
+    -webkit-box-flex: 3;
+    flex: 3;
+}
+
+.flex-four {
+    -webkit-flex: 4;
+    -webkit-box-flex: 4;
+    flex: 4;
+}
+
+.flex-five {
+    -webkit-flex: 5;
+    -webkit-box-flex: 5;
+    flex: 5;
+}
