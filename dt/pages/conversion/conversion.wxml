@@ -1,2 +1,15 @@
 <!--pages/conversion/conversion.wxml-->
-<text>pages/conversion/conversion.wxml</text>
+<view class="container">
+    <view class="conversion-box">
+        <form catchsubmit="formSubmit">
+            <view class="conversion-yhimg">占位图</view>
+            <view class="conversion-input">
+                <input name="value" placeholder="请输入优惠券码" />
+            </view>
+
+            <view class="conversion-btn"><button form-type="submit">立即兑换</button> </view>
+        </form>
+    </view>
+</view>
+
+

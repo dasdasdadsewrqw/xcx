@@ -1,1 +1,34 @@
 /* pages/conversion/conversion.wxss */
+.conversion-box{
+    padding: 50rpx;
+}
+.conversion-yhimg{
+    height: 220rpx;
+    line-height: 220rpx;
+    text-align: center;
+    font-size: 28rpx;
+    border: 1px solid #ddd;
+}
+.conversion-input{
+    margin-top: 30rpx;
+}
+.conversion-input input{
+    width: 100%;
+    height: 70rpx;
+    line-height: 70rpx;
+    padding: 0 10rpx;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.conversion-btn button:not([size='mini']){
+    width: 600rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 500;
+    padding: 0;
+    margin: 90rpx auto 60rpx auto;
+    background-color: #cc0033;
+    border-radius: 80rpx;
+}
