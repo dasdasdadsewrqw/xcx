@@ -1,1 +1,45 @@
 /* pages/coupon/coupon.wxss */
+.coupon-head{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+}
+.coupon-head text{
+    display: inline-block;
+    height: 100%;
+    color: #999;
+    box-sizing: border-box;
+}
+.coupon-head .active text{
+    color: #222;
+    border-bottom: 2px solid #222;
+}
+.coupon-center{
+    padding: 20rpx;
+    height:-webkit-calc(100% - 40rpx); 
+    height:calc(100% - 40rpx); 
+    overflow-y: auto;
+}
+.coupon-list{
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 24rpx;
+    color: #999;
+    text-align: center;
+    margin-bottom: 20rpx;
+    border: 1px solid #999;
+}
+.coupon-btn button:not([size='mini']){
+    width: 600rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 500;
+    padding: 0;
+    margin: 90rpx auto 60rpx auto;
+    background-color: #cc0033;
+    border-radius: 80rpx;
+}

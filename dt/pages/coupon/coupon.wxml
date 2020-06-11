@@ -1,5 +1,24 @@
 <!--pages/coupon/coupon.wxml-->
 <view class="container">
-    <text>pages/coupon/coupon.wxml</text>
+    <view class="coupon-box">
+        <view class="coupon-head wx-flex swiper-tab">
+            <view class="flex-one {{ headIdx == 0 ? 'active' : '' }}" bindtap="couponHead" data-index="0"><text>待使用</text></view>
+            <view class="flex-one {{ headIdx == 1 ? 'active' : '' }}" bindtap="couponHead" data-index="1"><text>已使用</text></view>
+        </view>
+        <swiper current="{{ headIdx }}" bindchange="bindChange" style="height:{{winHeight - 45}}px" duration="300">
+            <swiper-item>
+                <view class="coupon-center swiper-item">
+                    <view class="coupon-list" wx:for="{{ unused }}" wx:key="index">{{ item }}</view>
+
+                    <view class="coupon-btn"><button bindtap="couponLink">优惠券兑换</button></view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                <view class="coupon-center swiper-item">
+                    <view class="coupon-list" wx:for="{{ used }}" wx:key="index">{{ item }}</view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
 </view>
 
