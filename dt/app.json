@@ -8,7 +8,8 @@
         "pages/siteBook/siteBook",
         "pages/addSite/addSite",
         "pages/coupon/coupon",
-        "pages/conversion/conversion"
+        "pages/conversion/conversion",
+        "pages/toShare/toShare"
     ],
     "window": {
         "backgroundTextStyle": "light",

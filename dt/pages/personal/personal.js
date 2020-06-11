@@ -57,7 +57,7 @@ Component({
             }, {
                 iconImg: '/static/yqfx.png',
                 name: '邀请分享',
-                url: '',
+                url: '/pages/toShare/toShare',
                 astrict: true
             }, {
                 iconImg: '/static/gywm.png',

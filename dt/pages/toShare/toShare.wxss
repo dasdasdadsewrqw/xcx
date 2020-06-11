@@ -1,0 +1,57 @@
+/* pages/toShare/toShare.wxss */
+.toshare-bgclor{
+    height: 30rpx;
+    background: #f2f2f2;
+}
+.toshare-img{
+    height: 400rpx;
+    line-height: 400rpx;
+    text-align: center;
+    font-size: 24rpx;
+    border: 1px solid #999;
+    background: #fff;
+}
+.toshare-text{
+    padding: 50rpx 0;
+    background: #fff;
+    text-align: center;
+}
+.toshare-txTitle{
+    font-size: 36rpx;
+    font-weight: 700;
+    padding-bottom: 50rpx;
+}
+.toshare-txText{
+    font-size: 28rpx;
+    color: #222;
+    padding-bottom: 30rpx;
+}
+.toshare-icon{
+    font-size: 24rpx;
+    color: #999;
+}
+.toshare-icon button:not([size='mini']){
+    width: 80rpx;
+    height: 80rpx;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 100% 100%;
+    margin-bottom: 10rpx;
+}
+.toshare-rule{
+    padding: 30rpx;
+    background: #fff;
+}
+.toshare-ruleTit{
+    font-size: 28rpx;
+    color: #222;
+    text-align: center;
+}
+.toshare-ruleTit text{
+    color: #ccc;
+}
+.toshare-ruleText{
+    margin-top: 30rpx;
+    font-size: 24rpx;
+    color: #222;
+}
